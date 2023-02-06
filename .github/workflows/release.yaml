@@ -1,7 +1,9 @@
 on:
-  push:
-    branches:
-      - main  # Set a branch that will trigger a deployment
+  #push:
+  #  branches:
+  #    - main  # Set a branch that will trigger a deployment
+  release:
+    types: [created]
 
 jobs:
   release-linux-amd64:
